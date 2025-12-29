@@ -41,3 +41,14 @@ positiveCount, negativeCount
 
 Components used:
 Variables, Array, Loop, Conditional statements
+
+Task 5: Remove Duplicates from a List
+
+Input:
+numbers[]
+
+Output:
+unique[]
+
+Components used:
+Arrays, Variables, Loops, Conditional statements
