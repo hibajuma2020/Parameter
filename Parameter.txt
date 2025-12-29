@@ -1082,3 +1082,14 @@ secondLargest
 
 Components used:
 Variables, Array, Loop, Conditional statements
+
+Task 9: Check if a String is a Palindrome
+
+Input:
+text
+
+Output:
+"Palindrome" or "Not a Palindrome"
+
+Components used:
+Variables, Loop, Conditional statements
