@@ -1093,3 +1093,14 @@ Output:
 
 Components used:
 Variables, Loop, Conditional statements
+
+Task 10: Generate Fibonacci Sequence
+
+Input:
+N
+
+Output:
+fibonacci[]
+
+Components used:
+Variables, Loop, Array
