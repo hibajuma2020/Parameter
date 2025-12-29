@@ -1,0 +1,10 @@
+Task1 : Calculate Average
+
+Input:
+numbers[]
+
+Output:
+average
+
+Components used:
+Variables, Array, Loop
