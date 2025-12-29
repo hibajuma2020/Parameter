@@ -1071,3 +1071,14 @@ merged[]
 
 Components used:
 Arrays, Variables, Loops, Conditional statements
+
+Task 8: Find the Second Largest Number
+
+Input:
+numbers[]
+
+Output:
+secondLargest
+
+Components used:
+Variables, Array, Loop, Conditional statements
