@@ -19,3 +19,14 @@ Output:
 
 Components used:
 Variable, Conditional statement
+
+Task 3: Find the Smallest Number in a List
+
+Input:
+numbers[]
+
+Output:
+smallest
+
+Components used:
+Variables, Array, Loop, Conditional statement
