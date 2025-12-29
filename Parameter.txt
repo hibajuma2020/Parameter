@@ -1061,3 +1061,13 @@ primes[]
 Components used:
 Variables, Loops, Conditional statements
 
+Task 7: Merge Two Sorted Lists
+
+Input:
+list1[], list2[]
+
+Output:
+merged[]
+
+Components used:
+Arrays, Variables, Loops, Conditional statements
