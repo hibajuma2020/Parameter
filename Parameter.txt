@@ -52,3 +52,1012 @@ unique[]
 
 Components used:
 Arrays, Variables, Loops, Conditional statements
+
+
+You said:
+An algorithm is a set of well-defined instructions to solve a problem Several fundamental components are used to
+build an algorithm in programming, including variables, conditions, loops, functions, and more.
+
+1. Variables
+A variable is a named storage location for data that holds values that can change during program execution.
+Example:
+// Declare variables
+age = 25
+name = "Alice"
+price = 10.5
+isAvailable = true
+Example: Storing and updating values
+count = 5
+count = count + 1 // count is now 6
+2. Input and Output statements
+Input allows users to enter data, and output displays data.
+Example:
+// Read user input
+integer age
+print "Enter your age: "
+input age
+print "You entered: ", age
+3. Conditional Statements (Decision Making)
+Conditional statements allow programs to make decisions based on conditions.
+If-Else Statement
+integer age
+print "Enter your age: "
+input age
+if age >= 18 then
+print "You are an adult."
+else
+print "You are a minor."
+
+Nested If-Else
+integer marks
+print "Enter marks: "
+input marks
+if marks >= 90 then
+print "Grade: A"
+else if marks >= 75 then
+print "Grade: B"
+else if marks >= 50 then
+print "Grade: C"
+else
+print "Grade: F"
+• This checks multiple conditions to assign a grade.
+4. Loops (Iteration)
+Loops are used to repeat a block of code multiple times.
+While Loop
+Repeats while a condition is true.
+integer count = 1
+while count <= 5 do
+print count
+count = count + 1
+Output:
+1
+2
+3
+4
+5
+For Loop
+Used when the number of iterations is known.
+for integer i = 1 to 5 do
+print i
+Same output as above.
+
+5. Functions (Procedures)
+A function is a reusable block of code.
+Example: Function to Add Two Numbers
+function add(integer a, integer b)
+return a + b
+
+integer result = add(5, 10)
+print "Sum: ", result
+Output:
+Sum: 15
+6. Arrays and Lists
+Arrays store multiple values of the same type.
+Example: Storing Numbers
+numbers[ ] = {10, 20, 30, 40, 50}
+print numbers[2] // Output: 30
+Looping Through an Array
+numbers[ ] = {1, 2, 3}
+for integer i = 0 to 2 do
+print numbers[i]
+Output:
+1
+2
+3
+
+Summary
+Concept Purpose Example
+Variables Store values x = 5
+Input/Output Get and display data input name, print name
+Conditional Statements Decision making if age >= 18 then ...
+Loops Repetition for i = 1 to 5 do ...
+Functions Code reuse function add(a, b) . from this write to me for these tasks bello:Algorithm Design Tasks
+Task 1: Calculate Average
+Write an algorithm that takes a list of numbers and returns their average.
+Input: A list of numbers
+Output: The average of all numbers
+Task 2: Check if a Number is Even or Odd
+Write an algorithm that takes a number as input and determines whether it is even or odd.
+Input: A number
+Output: "Even" or "Odd"
+Task 3: Find the Smallest Number in a List
+Write an algorithm that takes a list of numbers and finds the smallest one.
+Input: A list of numbers
+Output: The smallest number
+Task 4: Count Positive and Negative Numbers
+Write an algorithm that takes a list of numbers and counts how many are positive and how many are negative.
+Input: A list of numbers
+Output: Count of positive numbers and count of negative numbers
+Task 5: Remove Duplicates from a List
+Write an algorithm that takes a list of numbers and returns a new list with all duplicate values removed, keeping
+only unique values.
+Input: A list of numbers (may contain duplicates)
+Output: A list with unique values only
+Task 6: Find All Prime Numbers Up to N
+Write an algorithm that takes a number N and returns all prime numbers from 2 up to N.
+Input: A positive integer N
+Output: A list of all prime numbers ≤ N
+Task 7: Merge Two Sorted Lists
+Write an algorithm that takes two sorted lists of numbers and merges them into one sorted list.
+Input: Two sorted lists
+Output: A single sorted list containing all elements from both lists
+Task 8: Find the Second Largest Number
+Write an algorithm that takes a list of numbers and finds the second largest number. Assume the list has at least
+two different numbers.
+Input: A list of numbers
+Output: The second largest number
+Task 9: Check if a String is a Palindrome
+Write an algorithm that checks whether a given string is a palindrome (reads the same forwards and backwards,
+ignoring spaces and case).
+Input: A string
+Output: "Palindrome" or "Not a Palindrome"
+Example: "racecar" is a palindrome, "Madam" is a palindrome, "hello" is not
+Task 10: Generate Fibonacci Sequence
+Write an algorithm that generates the first N numbers of the Fibonacci sequence. The Fibonacci sequence starts
+with 0 and 1, and each subsequent number is the sum of the previous two numbers.
+Input: A positive integer N
+Output: A list containing the first N Fibonacci numbers
+Example: If N = 7, output should be [0, 1, 1, 2, 3, 5, 8
+ChatGPT said:
+تمام 👍
+بكتب لك الخوارزميات (Algorithms) لكل مهمة بنفس الأسلوب اللي استخدمتيه فوق: متغيرات، إدخال/إخراج، شروط، حلقات، وبسيودوكود واضح وبسيط.
+
+Algorithm Design Tasks
+Task 1: Calculate Average
+Input: List of numbers
+Output: Average of the numbers
+
+Algorithm:
+
+numbers[ ] = list of numbers
+sum = 0
+count = length of numbers
+
+for integer i = 0 to count-1 do
+    sum = sum + numbers[i]
+end for
+
+average = sum / count
+print "Average = ", average
+Task 2: Check if a Number is Even or Odd
+Input: A number
+Output: "Even" or "Odd"
+
+Algorithm:
+
+integer num
+print "Enter a number: "
+input num
+
+if num % 2 == 0 then
+    print "Even"
+else
+    print "Odd"
+end if
+Task 3: Find the Smallest Number in a List
+Input: List of numbers
+Output: Smallest number
+
+Algorithm:
+
+numbers[ ] = list of numbers
+smallest = numbers[0]
+
+for integer i = 1 to length(numbers)-1 do
+    if numbers[i] < smallest then
+        smallest = numbers[i]
+    end if
+end for
+
+print "Smallest number = ", smallest
+Task 4: Count Positive and Negative Numbers
+Input: List of numbers
+Output: Count of positive and negative numbers
+
+Algorithm:
+
+numbers[ ] = list of numbers
+positiveCount = 0
+negativeCount = 0
+
+for integer i = 0 to length(numbers)-1 do
+    if numbers[i] > 0 then
+        positiveCount = positiveCount + 1
+    else if numbers[i] < 0 then
+        negativeCount = negativeCount + 1
+    end if
+end for
+
+print "Positive numbers = ", positiveCount
+print "Negative numbers = ", negativeCount
+Task 5: Remove Duplicates from a List
+Input: List of numbers (with duplicates)
+Output: List of unique values
+
+Algorithm:
+
+numbers[ ] = list of numbers
+unique[ ] = empty list
+
+for integer i = 0 to length(numbers)-1 do
+    found = false
+
+    for integer j = 0 to length(unique)-1 do
+        if numbers[i] == unique[j] then
+            found = true
+        end if
+    end for
+
+    if found == false then
+        add numbers[i] to unique
+    end if
+end for
+
+print unique
+Task 6: Find All Prime Numbers Up to N
+Input: Positive integer N
+Output: List of prime numbers ≤ N
+
+Algorithm:
+
+integer N
+print "Enter N: "
+input N
+
+for integer num = 2 to N do
+    isPrime = true
+
+    for integer i = 2 to num-1 do
+        if num % i == 0 then
+            isPrime = false
+        end if
+    end for
+
+    if isPrime == true then
+        print num
+    end if
+end for
+Task 7: Merge Two Sorted Lists
+Input: Two sorted lists
+Output: One sorted list
+
+Algorithm:
+
+list1[ ], list2[ ]
+merged[ ] = empty list
+i = 0
+j = 0
+
+while i < length(list1) and j < length(list2) do
+    if list1[i] < list2[j] then
+        add list1[i] to merged
+        i = i + 1
+    else
+        add list2[j] to merged
+        j = j + 1
+    end if
+end while
+
+while i < length(list1) do
+    add list1[i] to merged
+    i = i + 1
+end while
+
+while j < length(list2) do
+    add list2[j] to merged
+    j = j + 1
+end while
+
+print merged
+Task 8: Find the Second Largest Number
+Input: List of numbers
+Output: Second largest number
+
+Algorithm:
+
+numbers[ ] = list of numbers
+largest = -infinity
+secondLargest = -infinity
+
+for integer i = 0 to length(numbers)-1 do
+    if numbers[i] > largest then
+        secondLargest = largest
+        largest = numbers[i]
+    else if numbers[i] > secondLargest and numbers[i] != largest then
+        secondLargest = numbers[i]
+    end if
+end for
+
+print "Second largest number = ", secondLargest
+Task 9: Check if a String is a Palindrome
+Input: A string
+Output: "Palindrome" or "Not a Palindrome"
+
+Algorithm:
+
+string text
+print "Enter a string: "
+input text
+
+text = convert text to lowercase
+text = remove spaces from text
+
+left = 0
+right = length(text) - 1
+isPalindrome = true
+
+while left < right do
+    if text[left] != text[right] then
+        isPalindrome = false
+    end if
+    left = left + 1
+    right = right - 1
+end while
+
+if isPalindrome == true then
+    print "Palindrome"
+else
+    print "Not a Palindrome"
+end if
+Task 10: Generate Fibonacci Sequence
+Input: Positive integer N
+Output: First N Fibonacci numbers
+
+Algorithm:
+
+integer N
+print "Enter N: "
+input N
+
+a = 0
+b = 1
+
+print a
+print b
+
+for integer i = 3 to N do
+    c = a + b
+    print c
+    a = b
+    b = c
+end for
+لو حابة:
+
+أحولهم Flowcharts
+
+أو أكتبهم C / Java / Python
+
+أو أرتبهم في جدول للمذاكرة
+
+قولي وبس 👌
+
+You said:
+not like this write input and what it is from task1 and if there is function,loop,array and output
+ChatGPT said:
+تمام، فهمتك 👍
+بكتبها بشكل نظري ومنظّم لكل مهمة، بدون كود، بس أوضح:
+What it is – Input – Output – Used Components (Function / Loop / Array / Condition)
+وبأسلوب بسيط وواضح.
+
+Task 1: Calculate Average
+What it is:
+Algorithm to calculate the average of a list of numbers.
+
+Input:
+A list of numbers.
+
+Output:
+The average value of the numbers.
+
+Used Components:
+
+Variables (sum, count, average)
+
+Array (list of numbers)
+
+Loop (to add all numbers)
+
+Task 2: Check if a Number is Even or Odd
+What it is:
+Algorithm to determine whether a number is even or odd.
+
+Input:
+A single number.
+
+Output:
+"Even" or "Odd".
+
+Used Components:
+
+Variable (number)
+
+Conditional statement (if–else)
+
+Task 3: Find the Smallest Number in a List
+What it is:
+Algorithm to find the smallest value in a list of numbers.
+
+Input:
+A list of numbers.
+
+Output:
+The smallest number in the list.
+
+Used Components:
+
+Variables (smallest)
+
+Array (list of numbers)
+
+Loop (to compare elements)
+
+Conditional statement
+
+Task 4: Count Positive and Negative Numbers
+What it is:
+Algorithm to count how many numbers are positive and how many are negative.
+
+Input:
+A list of numbers.
+
+Output:
+Number of positive values and number of negative values.
+
+Used Components:
+
+Variables (positiveCount, negativeCount)
+
+Array
+
+Loop
+
+Conditional statements
+
+Task 5: Remove Duplicates from a List
+What it is:
+Algorithm to remove duplicate values and keep only unique numbers.
+
+Input:
+A list of numbers with duplicates.
+
+Output:
+A new list containing only unique values.
+
+Used Components:
+
+Arrays (original list, unique list)
+
+Variables
+
+Nested loops
+
+Conditional statements
+
+Task 6: Find All Prime Numbers Up to N
+What it is:
+Algorithm to find all prime numbers from 2 up to a given number N.
+
+Input:
+A positive integer N.
+
+Output:
+A list of all prime numbers less than or equal to N.
+
+Used Components:
+
+Variables
+
+Loops (nested loops)
+
+Conditional statements
+
+Task 7: Merge Two Sorted Lists
+What it is:
+Algorithm to merge two sorted lists into one sorted list.
+
+Input:
+Two sorted lists of numbers.
+
+Output:
+One merged sorted list.
+
+Used Components:
+
+Arrays
+
+Variables (indexes)
+
+Loops
+
+Conditional statements
+
+Task 8: Find the Second Largest Number
+What it is:
+Algorithm to find the second largest number in a list.
+
+Input:
+A list of numbers.
+
+Output:
+The second largest number.
+
+Used Components:
+
+Variables (largest, secondLargest)
+
+Array
+
+Loop
+
+Conditional statements
+
+Task 9: Check if a String is a Palindrome
+What it is:
+Algorithm to check if a string reads the same forwards and backwards.
+
+Input:
+A string.
+
+Output:
+"Palindrome" or "Not a Palindrome".
+
+Used Components:
+
+Variables
+
+Loop
+
+Conditional statements
+
+String processing
+
+Task 10: Generate Fibonacci Sequence
+What it is:
+Algorithm to generate the first N numbers of the Fibonacci sequence.
+
+Input:
+A positive integer N.
+
+Output:
+A list of the first N Fibonacci numbers.
+
+Used Components:
+
+Variables
+
+Loop
+
+Array or sequential output
+
+لو تحبي أرتبهم في جدول رسمي للواجب أو أكتبهم بصيغة امتحانية قوليلي 💙
+
+You said:
+not like this 5. Functions (Procedures)
+A function is a reusable block of code.
+Example: Function to Add Two Numbers
+function add(integer a, integer b)
+return a + b
+
+integer result = add(5, 10)
+print "Sum: ", result
+Output:
+Sum: 15
+ChatGPT said:
+آها 👍 الآن واضح قصدك تمامًا
+تريدي نفس أسلوب النقطة (5. Functions):
+يعني
+
+عنوان
+
+تعريف بسيط
+
+Example
+
+Algorithm / pseudo-code
+
+Output
+
+تمام، هذا هو 👇
+
+Task 1: Calculate Average
+What it is:
+Algorithm to calculate the average of a list of numbers.
+
+Example:
+
+numbers[] = {10, 20, 30, 40}
+Algorithm:
+
+sum = 0
+count = length of numbers
+
+for i = 0 to count-1 do
+    sum = sum + numbers[i]
+end for
+
+average = sum / count
+print average
+Output:
+
+25
+Task 2: Check if a Number is Even or Odd
+What it is:
+Algorithm to check whether a number is even or odd.
+
+Example:
+
+number = 7
+Algorithm:
+
+if number % 2 == 0 then
+    print "Even"
+else
+    print "Odd"
+end if
+Output:
+
+Odd
+Task 3: Find the Smallest Number in a List
+What it is:
+Algorithm to find the smallest number in a list.
+
+Example:
+
+numbers[] = {8, 3, 15, 2, 9}
+Algorithm:
+
+smallest = numbers[0]
+
+for i = 1 to length(numbers)-1 do
+    if numbers[i] < smallest then
+        smallest = numbers[i]
+    end if
+end for
+
+print smallest
+Output:
+
+2
+Task 4: Count Positive and Negative Numbers
+What it is:
+Algorithm to count positive and negative numbers in a list.
+
+Example:
+
+numbers[] = {-5, 4, -2, 7, 0}
+Algorithm:
+
+positive = 0
+negative = 0
+
+for i = 0 to length(numbers)-1 do
+    if numbers[i] > 0 then
+        positive = positive + 1
+    else if numbers[i] < 0 then
+        negative = negative + 1
+    end if
+end for
+
+print positive
+print negative
+Output:
+
+Positive = 2
+Negative = 2
+Task 5: Remove Duplicates from a List
+What it is:
+Algorithm to remove duplicate values from a list.
+
+Example:
+
+numbers[] = {1, 2, 2, 3, 1}
+Algorithm:
+
+unique[] = empty list
+
+for i = 0 to length(numbers)-1 do
+    found = false
+
+    for j = 0 to length(unique)-1 do
+        if numbers[i] == unique[j] then
+            found = true
+        end if
+    end for
+
+    if found == false then
+        add numbers[i] to unique
+    end if
+end for
+
+print unique
+Output:
+
+{1, 2, 3}
+Task 6: Find All Prime Numbers Up to N
+What it is:
+Algorithm to find all prime numbers up to a given number N.
+
+Example:
+
+N = 10
+Algorithm:
+
+for num = 2 to N do
+    isPrime = true
+
+    for i = 2 to num-1 do
+        if num % i == 0 then
+            isPrime = false
+        end if
+    end for
+
+    if isPrime == true then
+        print num
+    end if
+end for
+Output:
+
+2 3 5 7
+Task 7: Merge Two Sorted Lists
+What it is:
+Algorithm to merge two sorted lists into one sorted list.
+
+Example:
+
+list1[] = {1, 3, 5}
+list2[] = {2, 4, 6}
+Algorithm:
+
+merge both lists while comparing elements
+add smaller element each time
+continue until all elements are added
+Output:
+
+{1, 2, 3, 4, 5, 6}
+Task 8: Find the Second Largest Number
+What it is:
+Algorithm to find the second largest number in a list.
+
+Example:
+
+numbers[] = {10, 5, 8, 20}
+Algorithm:
+
+largest = -infinity
+secondLargest = -infinity
+
+for i = 0 to length(numbers)-1 do
+    if numbers[i] > largest then
+        secondLargest = largest
+        largest = numbers[i]
+    else if numbers[i] > secondLargest and numbers[i] != largest then
+        secondLargest = numbers[i]
+    end if
+end for
+
+print secondLargest
+Output:
+
+10
+Task 9: Check if a String is a Palindrome
+What it is:
+Algorithm to check if a string is a palindrome.
+
+Example:
+
+text = "Madam"
+Algorithm:
+
+convert text to lowercase
+compare characters from start and end
+
+if all characters match then
+    print "Palindrome"
+else
+    print "Not a Palindrome"
+end if
+Output:
+
+Palindrome
+Task 10: Generate Fibonacci Sequence
+What it is:
+Algorithm to generate Fibonacci sequence up to N terms.
+
+Example:
+
+N = 7
+Algorithm:
+
+a = 0
+b = 1
+print a
+print b
+
+for i = 3 to N do
+    c = a + b
+    print c
+    a = b
+    b = c
+end for
+Output:
+
+0 1 1 2 3 5 8
+لو حابة أختصرهم أكثر عشان واجب أو أرتبهم بنفس تنسيق الكتاب حرفيًا قوليلي 👌
+
+You said:
+nooo شوف كيف مثلا تاسك 1 input :a list of numbers 
+ChatGPT said:
+😂 تمام تمام، الآن 100% فهمتك
+تبغي نفس الجملة البسيطة جدًا مثل الكتاب، بدون شرح طويل ولا كود تقريبًا.
+بس: Task – Input – Output – Components used.
+خلينا نكتبهم بهالشكل 👇
+
+Task 1: Calculate Average
+Input:
+A list of numbers
+
+Output:
+The average of all numbers
+
+Components used:
+Variables, Array, Loop
+
+Task 2: Check if a Number is Even or Odd
+Input:
+A number
+
+Output:
+"Even" or "Odd"
+
+Components used:
+Variable, Conditional statement
+
+Task 3: Find the Smallest Number in a List
+Input:
+A list of numbers
+
+Output:
+The smallest number
+
+Components used:
+Variables, Array, Loop, Conditional statement
+
+Task 4: Count Positive and Negative Numbers
+Input:
+A list of numbers
+
+Output:
+Count of positive numbers and count of negative numbers
+
+Components used:
+Variables, Array, Loop, Conditional statements
+
+Task 5: Remove Duplicates from a List
+Input:
+A list of numbers (may contain duplicates)
+
+Output:
+A list with unique values only
+
+Components used:
+Arrays, Variables, Loops, Conditional statements
+
+Task 6: Find All Prime Numbers Up to N
+Input:
+A positive integer N
+
+Output:
+A list of all prime numbers ≤ N
+
+Components used:
+Variables, Loops, Conditional statements
+
+Task 7: Merge Two Sorted Lists
+Input:
+Two sorted lists of numbers
+
+Output:
+A single sorted list
+
+Components used:
+Arrays, Variables, Loops, Conditional statements
+
+Task 8: Find the Second Largest Number
+Input:
+A list of numbers
+
+Output:
+The second largest number
+
+Components used:
+Variables, Array, Loop, Conditional statements
+
+Task 9: Check if a String is a Palindrome
+Input:
+A string
+
+Output:
+"Palindrome" or "Not a Palindrome"
+
+Components used:
+Variables, Loop, Conditional statements
+
+Task 10: Generate Fibonacci Sequence
+Input:
+A positive integer N
+
+Output:
+A list containing the first N Fibonacci numbers
+
+Components used:
+Variables, Loop, Array
+
+لو تبغيها نفس تنسيق الامتحان حرفيًا أو في جدول قولِي وخلاص 😌
+
+You said:
+كذا حلو بس انه مثلا الانبت م كاتب A list of numbers[]
+ChatGPT said:
+آهااا تمام 😅 الآن وصلت الفكرة بالضبط
+تبغي Input مكتوب بصيغة برمجية مثل: numbers[] مو جملة طويلة.
+خلاص، هذا التنسيق النهائي 👌
+
+Task 1: Calculate Average
+Input:
+numbers[]
+
+Output:
+average
+
+Components used:
+Variables, Array, Loop
+
+Task 2: Check if a Number is Even or Odd
+Input:
+num
+
+Output:
+"Even" or "Odd"
+
+Components used:
+Variable, Conditional statement
+
+Task 3: Find the Smallest Number in a List
+Input:
+numbers[]
+
+Output:
+smallest
+
+Components used:
+Variables, Array, Loop, Conditional statement
+
+Task 4: Count Positive and Negative Numbers
+Input:
+numbers[]
+
+Output:
+positiveCount, negativeCount
+
+Components used:
+Variables, Array, Loop, Conditional statements
+
+Task 5: Remove Duplicates from a List
+Input:
+numbers[]
+
+Output:
+unique[]
+
+Components used:
+Arrays, Variables, Loops, Conditional statements
+
+Task 6: Find All Prime Numbers Up to N
+Input:
+N
+
+Output:
+primes[]
+
+Components used:
+Variables, Loops, Conditional statements
+
