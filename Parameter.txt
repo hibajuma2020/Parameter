@@ -30,3 +30,14 @@ smallest
 
 Components used:
 Variables, Array, Loop, Conditional statement
+
+Task 4: Count Positive and Negative Numbers
+
+Input:
+numbers[]
+
+Output:
+positiveCount, negativeCount
+
+Components used:
+Variables, Array, Loop, Conditional statements
